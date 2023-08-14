@@ -12,3 +12,28 @@ form.addEventListener('submit', (event) => {
     alert('Email ou senha inválidos.');
   }
 });
+
+const btnSend = getById('submit-btn');
+const checkBox = getById('agreement');
+
+checkBox.addEventListener('change', (event) => {
+  const clicked = event.target.checked;
+  if (clicked) {
+    btnSend.removeAttribute('disabled');
+  } else {
+    btnSend.disabled = true;
+  }
+});
+
+const submitButton = document.querySelector('#submit-btn');
+const agreementCheckbox = document.querySelector('#agreement');
+
+agreementCheckbox.addEventListener('change', (event) => {
+  const isChecked = event.target.checked;
+
+  if (isChecked) {
+    submitButton.removeAttribute('disabled');
+  } else {
+    submitButton.disabled = true;
+  }
+});
