@@ -54,3 +54,9 @@ main {
   flex: 1;
   width: 40%;
 }
+
+#div-family , #div-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
