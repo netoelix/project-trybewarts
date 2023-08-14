@@ -32,3 +32,17 @@ main {
     height: 50px;
     margin-bottom: 10px;
 }
+#name-lastname-group {
+    display: flex;
+    gap: 10px;
+}#name-lastname-group input {
+    flex: 1; 
+    width: 50%;
+}
+#email-house-group input,
+#email-house-group select {
+    flex: 1;
+    width: 40%;
+}
+
+
